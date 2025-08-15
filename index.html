@@ -455,7 +455,7 @@
         const pointsPerAd = 1;
 
         // --- Configuration (Points and Withdrawal) ---
-        const ratePerPoint = 0.002; // প্রতি পয়েন্টের জন্য $0.002
+        const ratePerPoint = 0.0015; // প্রতি পয়েন্টের জন্য $0.002
         const MIN_WITHDRAW_USD = 0.05; // সর্বনিম্ন উত্তোলন $0.05
         const ADMIN_USER_ID = '7390932497';
         let adInterval;
@@ -488,7 +488,7 @@
             if (adInterval) clearInterval(adInterval);
             adInterval = setInterval(() => {
                 showInAppInterstitial();
-            }, 30000); // 30 seconds
+            }, 20000); // 30 seconds
             console.log("Automatic In-App Interstitial Ads started, interval: 30 seconds.");
         }
 
